@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quero ser voluntária — Mulheres em Salvação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-topo">
+    <div class="cabecalho">
+      <a class="logo" href="index.html" aria-label="Mulheres em Salvação, início">
+        <img src="Logo.png" alt="">
+        <span>Mulheres em<br>Salvação</span>
+      </a>
+
+      <nav id="nav-principal" aria-label="Principal">
+        <a href="index.html">Home</a>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Preciso de ajuda
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="acolhimento.html">Como ser acolhida</a></li>
+            <li><a href="mapa.html">Mapa de serviços</a></li>
+            <li><a href="fale-com-a-rede.html">Fale com a nossa rede</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Participe
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="voluntariado.html">Quero ser voluntária</a></li>
+            <li><a href="capacitacao.html">Capacitação de voluntárias</a></li>
+            <li><a href="doacao.html">Quero doar</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Quem somos
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="projetos.html">Nossos projetos</a></li>
+            <li><a href="pesquisa.html">Pesquisa sobre acolhimento</a></li>
+            <li><a href="equipe.html">Nossa equipe</a></li>
+          </ul>
+        </div>
+
+        <a href="fale-com-a-rede.html" data-abrir-chat>Chat</a>
+      </nav>
+
+      <a class="saida" href="https://www.google.com" rel="noopener">Saída rápida</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="pag-cabeca">
+      <div class="miolo pag-grade">
+        <div>
+          <h1>Quero ser voluntária</h1>
+          <p class="lead">Psicólogas, advogadas, assistentes sociais e outras profissionais podem atender mulheres pela rede. Preencha o cadastro e diga quanto tempo você tem.</p>
+        </div>
+        <div class="pag-imagem"><img src="img/voluntarias.svg" alt="Ilustração de três mulheres lado a lado, com um coração acima delas" onerror="this.parentNode.hidden=true"></div>
+      </div>
+    </section>
+
+    <div class="miolo corpo">
+      <div class="ed-contato">
+
+        <div class="ed-contato-texto">
+          <p class="ed-rotulo">Como funciona</p>
+          <ol class="ed-lista">
+            <li><div><strong>Cadastro.</strong> Preencha o formulário com sua área e o tempo que pode dar.</div></li>
+            <li><div><strong>Conversa.</strong> Alguém da rede entra em contato com você.</div></li>
+            <li><div><strong>Capacitação.</strong> Antes de atender, você faz a <a class="ed-link" href="capacitacao.html">capacitação de 12 horas</a>.</div></li>
+          </ol>
+        </div>
+
+        <div class="ed-contato-form">
+          <form id="form-vol" novalidate>
+            <div class="campo"><label for="nome">Seu nome</label><input type="text" id="nome" name="nome" autocomplete="name"></div>
+            <div class="campo"><label for="email">E-mail</label><input type="email" id="email" name="email" autocomplete="email"></div>
+            <div class="campo"><label for="tel">Telefone ou WhatsApp (opcional)</label><input type="tel" id="tel" name="tel" autocomplete="tel"></div>
+            <div class="campo">
+              <label for="area">Como você quer ajudar?</label>
+              <select id="area" name="area">
+                <option value="">Escolha uma opção</option>
+                <option>Psicóloga</option>
+                <option>Advogada</option>
+                <option>Assistente social</option>
+                <option>Outra área</option>
+              </select>
+            </div>
+            <div class="campo"><label for="registro">Registro profissional</label><input type="text" id="registro" name="registro"><small>CRP, OAB ou outro. Preencha só se tiver.</small></div>
+            <div class="campo"><label for="cidade">Cidade e estado</label><input type="text" id="cidade" name="cidade"></div>
+            <div class="campo">
+              <label for="tempo">Quanto tempo você pode dar?</label>
+              <select id="tempo" name="tempo">
+                <option value="">Escolha uma opção</option>
+                <option>Algumas horas por mês</option>
+                <option>Algumas horas por semana</option>
+                <option>Plantões</option>
+                <option>A combinar</option>
+              </select>
+            </div>
+            <div class="campo"><label for="msg">Mais informações (opcional)</label><textarea id="msg" name="msg" rows="4"></textarea><small>Conte o que achar importante.</small></div>
+            <label class="aceite">
+              <input type="checkbox" id="aceite" name="aceite">
+              <span>Concordo em compartilhar estes dados com a rede, conforme a <a href="#privacidade">Política de Privacidade</a>.</span>
+            </label>
+            <p class="erro" id="erro" role="alert" hidden></p>
+            <button class="botao botao-principal" type="submit">Enviar cadastro</button>
+          </form>
+
+          <div class="sucesso" id="sucesso" role="status" hidden>
+            <h3>Cadastro enviado</h3>
+            <p>Obrigada por querer participar. Vamos entrar em contato com você.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo">
+      <div class="rodape-miolo">
+
+        <div>
+          <a class="rodape-logo" href="index.html">
+            <img src="Logo.png" alt="">
+            <span>Mulheres em<br>Salvação</span>
+          </a>
+          <p class="rodape-frase">Uma rede para que nenhuma mulher esteja sozinha.</p>
+          <div class="redes">
+            <a href="#instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.500"/><circle cx="16.500" cy="7.500" r=".6"/></svg>
+            </a>
+            <a href="#facebook" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.500h2V5.500h-2.500A3.500 3.500 0 0010 9v2H8v3h2v5h3v-5h2.200l.5-3H13V9.500c0-.6.4-1 1-1z"/></svg>
+            </a>
+            <a href="#linkedin" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10v8M6 6.500v.1M10 18v-8M10 13a3 3 0 016 0v5"/></svg>
+            </a>
+            <a href="#youtube" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.500" y="6.500" width="17" height="11" rx="3"/><path d="M10.500 9.500l4 2.500-4 2.500z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="rodape-links" aria-label="Rodapé">
+          <div>
+            <h2>Preciso de ajuda</h2>
+            <ul>
+              <li><a href="acolhimento.html">Como ser acolhida</a></li>
+              <li><a href="mapa.html">Mapa de serviços</a></li>
+              <li><a href="fale-com-a-rede.html">Fale com a nossa rede</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Participe</h2>
+            <ul>
+              <li><a href="voluntariado.html">Quero ser voluntária</a></li>
+              <li><a href="capacitacao.html">Capacitação</a></li>
+              <li><a href="doacao.html">Quero doar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Quem somos</h2>
+            <ul>
+              <li><a href="projetos.html">Nossos projetos</a></li>
+              <li><a href="pesquisa.html">Pesquisa</a></li>
+              <li><a href="equipe.html">Nossa equipe</a></li>
+              <li><a href="index.html#faq">Perguntas frequentes</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="rodape-base">
+        <span>© Mulheres em Salvação. Todos os direitos reservados.</span>
+        <span class="rodape-legal">
+          <a href="#privacidade">Política de Privacidade</a>
+          <a href="#termos">Termos de Uso</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var form = document.getElementById('form-vol');
+    var erro = document.getElementById('erro');
+    var sucesso = document.getElementById('sucesso');
+
+    function mostrarErro(texto) {
+      erro.textContent = texto;
+      erro.hidden = false;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      erro.hidden = true;
+
+      if (form.nome.value.trim() === '') { return mostrarErro('Falta o nome: escreva como podemos chamar você.'); }
+      if (form.email.value.indexOf('@') < 1) { return mostrarErro('E-mail incompleto: ele precisa ter @, como em nome@email.com.'); }
+      if (form.area.value === '') { return mostrarErro('Falta a área: escolha como você quer ajudar.'); }
+      if (form.cidade.value.trim() === '') { return mostrarErro('Falta a cidade: informe cidade e estado.'); }
+      if (!form.aceite.checked) { return mostrarErro('Falta a concordância: marque a caixa para enviar.'); }
+
+      var botao = form.querySelector('button[type="submit"]');
+      botao.disabled = true;
+
+      fetch('api.php?tipo=voluntaria', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nome: form.nome.value.trim(),
+          email: form.email.value.trim(),
+          tel: form.tel.value.trim(),
+          area: form.area.value,
+          registro: form.registro.value.trim(),
+          cidade: form.cidade.value.trim(),
+          tempo: form.tempo.value,
+          msg: form.msg.value.trim(),
+          aceite: form.aceite.checked
+        })
+      })
+        .then(function (r) { if (!r.ok) { throw new Error('erro'); } })
+        .then(function () {
+          form.hidden = true;
+          sucesso.hidden = false;
+          sucesso.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        })
+        .catch(function () {
+          botao.disabled = false;
+          mostrarErro('Não deu para enviar agora. Tente de novo mais tarde.');
+        });
+    });
+  </script>
+  <script src="site.js" defer></script>
+  <script src="acessibilidade.js" defer></script>
+
+</body>
+</html>

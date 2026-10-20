@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quero doar — Mulheres em Salvação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-topo">
+    <div class="cabecalho">
+      <a class="logo" href="index.html" aria-label="Mulheres em Salvação, início">
+        <img src="Logo.png" alt="">
+        <span>Mulheres em<br>Salvação</span>
+      </a>
+
+      <nav id="nav-principal" aria-label="Principal">
+        <a href="index.html">Home</a>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Preciso de ajuda
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="acolhimento.html">Como ser acolhida</a></li>
+            <li><a href="mapa.html">Mapa de serviços</a></li>
+            <li><a href="fale-com-a-rede.html">Fale com a nossa rede</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Participe
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="voluntariado.html">Quero ser voluntária</a></li>
+            <li><a href="capacitacao.html">Capacitação de voluntárias</a></li>
+            <li><a href="doacao.html">Quero doar</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Quem somos
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="projetos.html">Nossos projetos</a></li>
+            <li><a href="pesquisa.html">Pesquisa sobre acolhimento</a></li>
+            <li><a href="equipe.html">Nossa equipe</a></li>
+          </ul>
+        </div>
+
+        <a href="fale-com-a-rede.html" data-abrir-chat>Chat</a>
+      </nav>
+
+      <a class="saida" href="https://www.google.com" rel="noopener">Saída rápida</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="dc-hero">
+      <div class="miolo dc-hero-grade">
+        <div>
+          <p class="chamada">Doação</p>
+          <h1>Quero doar</h1>
+          <p class="dc-lead">A rede funciona com trabalho voluntário e doações. Qualquer valor ajuda a atender mais mulheres.</p>
+          <a class="botao botao-principal" href="#pix">Ver a chave Pix</a>
+        </div>
+        <div class="dc-hero-arte">
+          <img src="Ilustração de mulheres conectadas.png" alt="Duas mulheres sentadas de mãos dadas, ligadas por uma fita rosa">
+        </div>
+      </div>
+    </section>
+
+    <section class="miolo dc-sec" id="pix">
+      <div class="dc-pix">
+        <div>
+          <h2>Como doar por Pix</h2>
+          <p>Abra o aplicativo do seu banco, escolha Pix e cole a chave abaixo.</p>
+          <p class="dc-confira">Antes de confirmar, confira se o nome que aparece no aplicativo é o da associação.</p>
+        </div>
+        <div class="dc-chave-caixa">
+          <span class="dc-rotulo">Chave Pix (CNPJ)</span>
+          <strong class="dc-chave" id="chave">12.345.678/0001-00</strong>
+          <button class="botao botao-principal" type="button" id="copiar">Copiar chave Pix</button>
+          <span class="dc-feito" id="feito" role="status" aria-live="polite"></span>
+          <div class="dc-recebe">
+            <span class="dc-rotulo">Quem recebe</span>
+            <span>Associação Mulheres em Salvação</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="miolo dc-sec">
+      <div class="dc-alerta" role="note">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l13 23H3z"/><path d="M16 13v7M16 23.500v.1"/></svg>
+        <p><strong>Cuidado com golpes.</strong> Use só os dados desta página. Se alguém pedir doação em nome da rede por outro canal, não pague e avise a gente.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo">
+      <div class="rodape-miolo">
+
+        <div>
+          <a class="rodape-logo" href="index.html">
+            <img src="Logo.png" alt="">
+            <span>Mulheres em<br>Salvação</span>
+          </a>
+          <p class="rodape-frase">Uma rede para que nenhuma mulher esteja sozinha.</p>
+          <div class="redes">
+            <a href="#instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.500"/><circle cx="16.500" cy="7.500" r=".6"/></svg>
+            </a>
+            <a href="#facebook" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.500h2V5.500h-2.500A3.500 3.500 0 0010 9v2H8v3h2v5h3v-5h2.200l.5-3H13V9.500c0-.6.4-1 1-1z"/></svg>
+            </a>
+            <a href="#linkedin" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10v8M6 6.500v.1M10 18v-8M10 13a3 3 0 016 0v5"/></svg>
+            </a>
+            <a href="#youtube" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.500" y="6.500" width="17" height="11" rx="3"/><path d="M10.500 9.500l4 2.500-4 2.500z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="rodape-links" aria-label="Rodapé">
+          <div>
+            <h2>Preciso de ajuda</h2>
+            <ul>
+              <li><a href="acolhimento.html">Como ser acolhida</a></li>
+              <li><a href="mapa.html">Mapa de serviços</a></li>
+              <li><a href="fale-com-a-rede.html">Fale com a nossa rede</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Participe</h2>
+            <ul>
+              <li><a href="voluntariado.html">Quero ser voluntária</a></li>
+              <li><a href="capacitacao.html">Capacitação</a></li>
+              <li><a href="doacao.html">Quero doar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Quem somos</h2>
+            <ul>
+              <li><a href="projetos.html">Nossos projetos</a></li>
+              <li><a href="pesquisa.html">Pesquisa</a></li>
+              <li><a href="equipe.html">Nossa equipe</a></li>
+              <li><a href="index.html#faq">Perguntas frequentes</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="rodape-base">
+        <span>© Mulheres em Salvação. Todos os direitos reservados.</span>
+        <span class="rodape-legal">
+          <a href="#privacidade">Política de Privacidade</a>
+          <a href="#termos">Termos de Uso</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var b=document.getElementById('copiar'),f=document.getElementById('feito'),c=document.getElementById('chave').textContent;
+    b.addEventListener('click',function(){
+      var ok=function(){f.textContent='Chave copiada!';setTimeout(function(){f.textContent='';},2500);};
+      if(navigator.clipboard){navigator.clipboard.writeText(c).then(ok);}
+      else{var t=document.createElement('textarea');t.value=c;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();ok();}
+    });
+  </script>
+  <script src="site.js" defer></script>
+  <script src="acessibilidade.js" defer></script>
+</body>
+</html>

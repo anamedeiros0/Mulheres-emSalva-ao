@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fale com a nossa rede — Mulheres em Salvação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-topo">
+    <div class="cabecalho">
+      <a class="logo" href="index.html" aria-label="Mulheres em Salvação, início">
+        <img src="Logo.png" alt="">
+        <span>Mulheres em<br>Salvação</span>
+      </a>
+
+      <nav id="nav-principal" aria-label="Principal">
+        <a href="index.html">Home</a>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Preciso de ajuda
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="acolhimento.html">Como ser acolhida</a></li>
+            <li><a href="mapa.html">Mapa de serviços</a></li>
+            <li><a href="fale-com-a-rede.html">Fale com a nossa rede</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Participe
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="voluntariado.html">Quero ser voluntária</a></li>
+            <li><a href="capacitacao.html">Capacitação de voluntárias</a></li>
+            <li><a href="doacao.html">Quero doar</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-suspenso">
+          <button class="menu-botao" type="button" aria-expanded="false" aria-haspopup="true">
+            Quem somos
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+          </button>
+          <ul class="menu-lista">
+            <li><a href="projetos.html">Nossos projetos</a></li>
+            <li><a href="pesquisa.html">Pesquisa sobre acolhimento</a></li>
+            <li><a href="equipe.html">Nossa equipe</a></li>
+          </ul>
+        </div>
+
+        <a href="fale-com-a-rede.html" data-abrir-chat>Chat</a>
+      </nav>
+
+      <a class="saida" href="https://www.google.com" rel="noopener">Saída rápida</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="pag-cabeca">
+      <div class="miolo pag-grade">
+        <div>
+          <h1>Fale com a nossa rede</h1>
+          <p class="lead">Você não precisa dar o seu nome verdadeiro. Escreva o que quiser contar e diga como prefere ser respondida. A gente só entra em contato do jeito e na hora que você escolher.</p>
+        </div>
+        <div class="pag-imagem"><img src="img/contato.svg" alt="Ilustração de uma mulher com balões de mensagem ao redor" onerror="this.parentNode.hidden=true"></div>
+      </div>
+    </section>
+
+    <div class="miolo corpo">
+      <div class="ed-contato">
+
+        <div class="ed-contato-texto">
+          <p class="ed-rotulo">Como funciona</p>
+          <ol class="ed-lista">
+            <li><div><strong>Você escreve.</strong> Pode ser um desabafo ou uma pergunta. Não precisa dar o nome verdadeiro.</div></li>
+            <li><div><strong>Uma voluntária responde.</strong> Ela usa o canal e o horário que você escolher no formulário.</div></li>
+            <li><div><strong>Você decide o que vem depois.</strong> Se quiser, ela indica serviços perto de você.</div></li>
+          </ol>
+          <ul class="chips" aria-label="Garantias">
+            <li>Gratuito</li>
+            <li>Sigiloso</li>
+            <li>Sem julgamento</li>
+          </ul>
+
+          <p class="ed-rotulo">Prefere falar por telefone?</p>
+          <a class="canal-linha" href="tel:180"><span class="canal-num">Ligue 180</span><span>Central de Atendimento à Mulher. Gratuito, 24 horas.</span></a>
+          <a class="canal-linha" href="https://wa.me/556196100180" target="_blank" rel="noopener"><span class="canal-num">WhatsApp</span><span>Mande mensagem para o 180: (61) 9610-0180.</span></a>
+
+          <p class="ed-nota"><strong>Segurança no celular.</strong> Se alguém olha seu celular ou computador, use o botão Saída rápida. Depois da conversa, apague o histórico.</p>
+        </div>
+
+        <div class="ed-contato-form">
+          <form id="form-contato" novalidate>
+
+            <div class="campo">
+              <label for="mensagem">O que você quer contar?</label>
+              <textarea id="mensagem" name="mensagem" rows="6" maxlength="5000" required></textarea>
+              <small>Pode ser pouco ou muito. Você decide.</small>
+            </div>
+
+            <div class="campo">
+              <label for="apelido">Como podemos te chamar? (opcional)</label>
+              <input type="text" id="apelido" name="apelido" maxlength="80" autocomplete="off">
+              <small>Pode ser um apelido.</small>
+            </div>
+
+            <fieldset class="ed-opcoes">
+              <legend>Como prefere ser respondida?</legend>
+              <label><input type="radio" name="canal" value="whatsapp"> Por WhatsApp</label>
+              <label><input type="radio" name="canal" value="telefone"> Por ligação</label>
+              <label><input type="radio" name="canal" value="email"> Por e-mail</label>
+              <label><input type="radio" name="canal" value="site"> Só aqui, quando eu voltar ao site</label>
+            </fieldset>
+
+            <div class="campo" id="campo-contato">
+              <label for="contato">Seu telefone ou e-mail</label>
+              <input type="text" id="contato" name="contato" maxlength="150" autocomplete="off">
+              <small>Usamos só para falar com você.</small>
+            </div>
+
+            <div class="campo">
+              <label for="horario">Melhor horário para falar com segurança</label>
+              <select id="horario" name="horario">
+                <option value="">Qualquer horário</option>
+                <option value="manha">De manhã</option>
+                <option value="tarde">À tarde</option>
+                <option value="noite">À noite</option>
+              </select>
+            </div>
+
+            <label class="aceite">
+              <input type="checkbox" id="aceite" name="aceite">
+              <span>Concordo em compartilhar estas informações com a rede, conforme a <a href="#privacidade">Política de Privacidade</a>.</span>
+            </label>
+
+            <p class="erro" id="erro" role="alert" hidden></p>
+
+            <button class="botao botao-principal" type="submit">Enviar mensagem</button>
+          </form>
+
+          <div class="sucesso" id="sucesso" role="status" hidden>
+            <h3>Mensagem enviada</h3>
+            <p>Uma voluntária vai responder do jeito e no horário que você escolheu.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo">
+      <div class="rodape-miolo">
+
+        <div>
+          <a class="rodape-logo" href="index.html">
+            <img src="Logo.png" alt="">
+            <span>Mulheres em<br>Salvação</span>
+          </a>
+          <p class="rodape-frase">Uma rede para que nenhuma mulher esteja sozinha.</p>
+          <div class="redes">
+            <a href="#instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.500"/><circle cx="16.500" cy="7.500" r=".6"/></svg>
+            </a>
+            <a href="#facebook" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.500h2V5.500h-2.500A3.500 3.500 0 0010 9v2H8v3h2v5h3v-5h2.200l.5-3H13V9.500c0-.6.4-1 1-1z"/></svg>
+            </a>
+            <a href="#linkedin" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10v8M6 6.500v.1M10 18v-8M10 13a3 3 0 016 0v5"/></svg>
+            </a>
+            <a href="#youtube" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.500" y="6.500" width="17" height="11" rx="3"/><path d="M10.500 9.500l4 2.500-4 2.500z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="rodape-links" aria-label="Rodapé">
+          <div>
+            <h2>Preciso de ajuda</h2>
+            <ul>
+              <li><a href="acolhimento.html">Como ser acolhida</a></li>
+              <li><a href="mapa.html">Mapa de serviços</a></li>
+              <li><a href="fale-com-a-rede.html">Fale com a nossa rede</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Participe</h2>
+            <ul>
+              <li><a href="voluntariado.html">Quero ser voluntária</a></li>
+              <li><a href="capacitacao.html">Capacitação</a></li>
+              <li><a href="doacao.html">Quero doar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Quem somos</h2>
+            <ul>
+              <li><a href="projetos.html">Nossos projetos</a></li>
+              <li><a href="pesquisa.html">Pesquisa</a></li>
+              <li><a href="equipe.html">Nossa equipe</a></li>
+              <li><a href="index.html#faq">Perguntas frequentes</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="rodape-base">
+        <span>© Mulheres em Salvação. Todos os direitos reservados.</span>
+        <span class="rodape-legal">
+          <a href="#privacidade">Política de Privacidade</a>
+          <a href="#termos">Termos de Uso</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('form-contato');
+      var erro = document.getElementById('erro');
+      var sucesso = document.getElementById('sucesso');
+      var campoContato = document.getElementById('campo-contato');
+      var botao = form.querySelector('button[type="submit"]');
+      var textoBotao = botao.textContent;
+
+      function mostrarErro(texto) {
+        erro.textContent = texto;
+        erro.hidden = false;
+        return false;
+      }
+
+      /* traduz o que o servidor respondeu para uma frase que ajuda */
+      function mensagemDoServidor(status) {
+        if (status === 429) { return 'Muitas mensagens em pouco tempo. Espere alguns minutos e tente de novo, ou ligue 180.'; }
+        if (status === 400) { return 'Alguma informação não foi aceita. Confira os campos e tente de novo.'; }
+        if (status === 403) { return 'Não deu para enviar daqui. Tente de novo ou ligue 180.'; }
+        return 'Não deu para enviar agora. Tente de novo ou ligue 180.';
+      }
+
+      /* se ela escolher "só aqui", o contato deixa de ser necessário */
+      function atualizarContato() {
+        var soSite = form.canal.value === 'site';
+        campoContato.hidden = soSite;
+        if (soSite) { form.contato.value = ''; }
+      }
+
+      var canais = form.querySelectorAll('input[name="canal"]');
+      for (var i = 0; i < canais.length; i++) {
+        canais[i].addEventListener('change', atualizarContato);
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        erro.hidden = true;
+
+        if (form.mensagem.value.trim() === '') { return mostrarErro('Falta a mensagem: escreva o que você quer contar.'); }
+        if (form.canal.value === '') { return mostrarErro('Falta escolher como responder: marque uma das opções.'); }
+        if (form.canal.value !== 'site' && form.contato.value.trim() === '') { return mostrarErro('Falta o contato: informe um telefone ou e-mail.'); }
+        if (!form.aceite.checked) { return mostrarErro('Falta a concordância: marque a caixa para enviar.'); }
+
+        botao.disabled = true;
+        botao.textContent = 'Enviando...';
+
+        var controle = new AbortController();
+        var limite = setTimeout(function () { controle.abort(); }, 15000);
+
+        fetch('api.php?tipo=mensagem', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          signal: controle.signal,
+          body: JSON.stringify({
+            mensagem: form.mensagem.value.trim(),
+            apelido: form.apelido.value.trim(),
+            canal: form.canal.value,
+            contato: form.canal.value === 'site' ? '' : form.contato.value.trim(),
+            horario: form.horario.value,
+            aceite: form.aceite.checked
+          })
+        })
+          .then(function (r) {
+            return r.text().then(function (corpo) {
+              var dados = null;
+              try { dados = JSON.parse(corpo); } catch (x) { /* resposta que não é JSON */ }
+
+              if (!r.ok || !dados || dados.ok !== true) {
+                /* o motivo técnico fica no console (F12) para quem for ajudar a consertar */
+                console.error('api.php respondeu', r.status, corpo);
+                var falha = new Error('envio');
+                falha.status = r.status;
+                throw falha;
+              }
+            });
+          })
+          .then(function () {
+            form.hidden = true;
+            sucesso.hidden = false;
+            sucesso.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          })
+          .catch(function (err) {
+            botao.disabled = false;
+            botao.textContent = textoBotao;
+            mostrarErro(mensagemDoServidor(err && err.status));
+          })
+          .then(function () { clearTimeout(limite); });
+      });
+    })();
+  </script>
+  <script src="site.js" defer></script>
+  <script src="acessibilidade.js" defer></script>
+
+</body>
+</html>
