@@ -8,7 +8,7 @@
 var ENDERECO_RENDER = 'https://mulheres-emsalva-ao.onrender.com';
 var CHAT_API = (location.port === '3001') ? '' : (location.hostname === 'localhost' ? 'http://localhost:3001' : ENDERECO_RENDER);
 var NUMERO_WHATSAPP = '';   /* só números, com 55 e DDD. Vazio = sem botão de WhatsApp */
-var CHAT_TESTE = false;     /* true = mostra o erro técnico dentro do chat. Troque por false quando tudo funcionar */
+var CHAT_TESTE = true;     /* true = mostra o erro técnico dentro do chat. Troque por false quando tudo funcionar */
 
 /* ---------- Menus ---------- */
 var listaMenus = document.querySelectorAll('.menu-suspenso');
