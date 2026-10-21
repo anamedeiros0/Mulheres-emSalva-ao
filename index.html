@@ -326,9 +326,9 @@
       e.preventDefault();
       var botao = formNews.querySelector('button');
       botao.disabled = true;
-      fetch('api.php?tipo=newsletter', {
+      fetch('https://formspree.io/f/mvkzjdde', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({ email: formNews.email.value.trim() })
       })
         .then(function (r) { if (!r.ok) { throw new Error('erro'); } })
