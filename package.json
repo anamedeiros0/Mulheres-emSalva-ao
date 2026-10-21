@@ -1,0 +1,15 @@
+{
+  "name": "chat-mulheres-em-salvacao",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server-gemini.js",
+  "scripts": {
+    "start": "node server-gemini.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
